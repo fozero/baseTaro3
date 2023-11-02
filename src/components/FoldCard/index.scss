@@ -1,0 +1,89 @@
+.foldCard {
+  .avatarFoldCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 200px;
+    .wrapper {
+      width: 80px;
+      height: 120px;
+      border: 1px silid #000;
+      margin-bottom: 0;
+      .avatarImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .avatarFoldCard2 {
+    height: 350px;
+    .wrapper {
+      width: 120px;
+      height: 80px;
+      border: 1px silid #000;
+      margin-bottom: 0;
+      .avatarImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .verticleCard {
+    position: relative;
+    height: 900px;
+    .cardItem {
+      border-radius: 30px;
+      width: 700px;
+      height: 400px;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 30px 2px #333;
+      color: #fff;
+      &.card1 {
+        background: black;
+        top: 0;
+        z-index: 1;
+      }
+      &.card2 {
+        background: blue;
+        top: 200px;
+        z-index: 2;
+      }
+      &.card3 {
+        background: red;
+        top: 400px;
+        z-index: 3;
+      }
+    }
+  }
+  .verticleCard2 {
+    position: relative;
+    height: 1000px;
+    .cardItemWrapper {
+      height: 300px;
+      .cardItem {
+        border-radius: 30px;
+        width: 700px;
+        height: 400px;
+        margin: 0 auto;
+        box-shadow: 0 0 30px 2px #333;
+        color: #fff;
+        &.card1 {
+          background: black;
+        }
+        &.card2 {
+          background: blue;
+        }
+        &.card3 {
+          background: red;
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import "./index.scss";
 
 import SwiperSL from "@/components/swiperSL/swiperSL";
 import MySwiper from "@/components/MySwiper";
+import FoldCard from "@/components/FoldCard";
 
 export default function Index() {
   useLoad(() => {
@@ -14,6 +15,7 @@ export default function Index() {
     <View className="index">
       <Text>Hello world!</Text>
 
+      <FoldCard />
       <MySwiper />
 
       <SwiperSL />
