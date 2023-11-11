@@ -5,6 +5,8 @@ import "./index.scss";
 import SwiperSL from "@/components/swiperSL/swiperSL";
 import MySwiper from "@/components/MySwiper";
 import FoldCard from "@/components/FoldCard";
+import SpecialEffect from "@/components/SpecialEffect";
+import Sticky from "@/components/Sticky";
 
 export default function Index() {
   useLoad(() => {
@@ -14,7 +16,8 @@ export default function Index() {
   return (
     <View className="index">
       <Text>Hello world!</Text>
-
+      <Sticky />
+      <SpecialEffect />
       <FoldCard />
       <MySwiper />
 
